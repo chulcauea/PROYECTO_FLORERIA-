@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Nuestro Catálogo</h2>
+    <ul>
+        {% for flor in flores %}
+            <li><strong>{{ flor }}</strong> - Disponible para entrega hoy.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

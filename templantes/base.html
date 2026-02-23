@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} El Jardín de Domenica {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>🌸 El Jardín de Domenica 🌸</h1>
+        <nav>
+            <a href="/">Inicio</a> | 
+            <a href="/productos">Nuestras Flores</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        {% block content %} 
+        {% endblock %}
+    </main>
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 - Florería Boutique - Quito, Ecuador</p>
+    </footer>
+</body>
+</html>
